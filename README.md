@@ -2,7 +2,7 @@
 
 ## Bot Server API
 
-This is a capstone project I made during my studies at Udacity's Full Stack Developer Nanodegree. My main idea was to make a web app using RESTful APIs of a platform handling the set up of trading bots, at the will of Quant Managers and Traders. For the purpose of this project, only basic functionality will be covered, including setting up database entries of strategies offered and bots. The app is hosted in [`https://rj-capstone.heroku.com`](https://rj-capstone.heroku.com), and features external authentication with [`Auth0`](http://auth0.com).
+This is a capstone project I made during my studies at Udacity's Full Stack Developer Nanodegree. My main idea was to make a web app using RESTful APIs of a platform handling the set up of trading bots, at the will of Quant Managers and Traders. For the purpose of this project, only basic functionality will be covered, including setting up database entries of strategies offered and bots. The app is hosted in [`https://rj-capstone.herokuapp.com`](https://rj-capstone.herokuapp.com), and features external authentication with [`Auth0`](http://auth0.com).
 
 ## Getting Started
 
@@ -80,7 +80,7 @@ Active tokens for both roles are provided in the `setup.sh` file in order to tes
 
 ## API Endpoints
 
-All API endpoints are detailed in the [`app.py`](.app.py) file. When running this app locally, the default port is `localhost:5000`. The app is also hosted in Heroku at the URL: [`https://rj-capstone.heroku.com`](https://rj-capstone.heroku.com).
+All API endpoints are detailed in the [`app.py`](.app.py) file. When running this app locally, the default port is `localhost:5000`. The app is also hosted in Heroku at the URL: [`https://rj-capstone.herokuapp.com`](https://rj-capstone.herokuapp.com).
 
 ### Public Endpoints
 
