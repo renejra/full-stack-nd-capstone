@@ -1,0 +1,440 @@
+{
+	"info": {
+		"_postman_id": "6ad30759-0f3f-4d79-a436-14c15458e989",
+		"name": "Capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Trader",
+			"item": [
+				{
+					"name": "get strategies detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "rj-capstone.herokuapp.com/strategies-detail",
+							"host": [
+								"rj-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"strategies-detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get bots detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "rj-capstone.herokuapp.com/bots-detail",
+							"host": [
+								"rj-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"bots-detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch bot",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"TD Bot\",\n\t\"param_values\": \"3, price\"\n}"
+						},
+						"url": {
+							"raw": "rj-capstone.herokuapp.com/bots/1",
+							"host": [
+								"rj-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"bots",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qSkRSa1k0TmpsRlJqazJRVEF6TlVZME9FVkZOamRFTURCRlF6VTVNamM0TVVaQ09VVXpRUSJ9.eyJpc3MiOiJodHRwczovL2JvdGZzbmQuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlNzVlZDY1ZWJhZjU5MGM2ZGY4MmUyZSIsImF1ZCI6ImNhcHN0b25lIiwiaWF0IjoxNTg0ODM1MDAyLCJleHAiOjE1ODQ5MTEyMDIsImF6cCI6Inozb3lYSFBqUG1FZmJnT0R3a3l2Z3hJTzhlaHE2d1o2Iiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6Ym90cyIsImdldDpzdHJhdGVnaWVzIiwicGF0Y2g6Ym90cyJdfQ.y7XcD_8F3Jg7QaxG1Pphmj0BWbwsFPAVxaJupHFsQumt1sUiAq0qHC8RXNhSc10R208H2gkEBR9LVOPqf9ax4wBWy_15AAEe_qXGLbfyQXDKgMyr4pSzoEDuWOKLW5QVO91zrw1kiZ31YzmpG6quIAyP7PVY_KGDApj839u5lBrzOAVwUr65g85R0-dACLR6yhf6tRSSbEcVNrRCYUwEoMfcsw-8NhBcrh0auRWNx9u10a5pZOt1qXCH8khysjVHAxPIwJfd5IyN79F67meQuyqlDAfZgh4q04_QKnyiVZenSmHqXMcN30lcmtDnCt34Ze1jdpOJZmgqXdsfqgMfjA",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "399ee490-0608-49ce-bf0c-9617c74a3ebc",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "0caf224a-082a-4adf-9efc-379318099666",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Quant Manager",
+			"item": [
+				{
+					"name": "get strategies detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "rj-capstone.herokuapp.com/strategies-detail",
+							"host": [
+								"rj-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"strategies-detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get bots details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "rj-capstone.herokuapp.com/bots-detail",
+							"host": [
+								"rj-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"bots-detail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post strategy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\" : 69,\n\t\"name\" : \"New Strategy\",\n\t\"params\" : \"MA1, MA2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "rj-capstone.herokuapp.com/strategies/create",
+							"host": [
+								"rj-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"strategies",
+								"create"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "application/json",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch strategies",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"TD Mark\"\n}"
+						},
+						"url": {
+							"raw": "rj-capstone.herokuapp.com/strategies/1",
+							"host": [
+								"rj-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"strategies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete strategies",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "rj-capstone.herokuapp.com/strategies/69",
+							"host": [
+								"rj-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"strategies",
+								"69"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create bot",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 69,\n\t\"name\":\"New Bot\",\n\t\"active\": true,\n\t\"strategy_id\" : 3,\n\t\"timeframe\": \"4h\",\n\t\"param_values\":\"128,close\"\n}"
+						},
+						"url": {
+							"raw": "rj-capstone.herokuapp.com/bots/create",
+							"host": [
+								"rj-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"bots",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch bot",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"bot_name\":\"TD Bot\",\n\t\"active\": true\n}"
+						},
+						"url": {
+							"raw": "rj-capstone.herokuapp.com/bots/1",
+							"host": [
+								"rj-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"bots",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete bot",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "rj-capstone.herokuapp.com/bots/69",
+							"host": [
+								"rj-capstone",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"bots",
+								"69"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ik1qSkRSa1k0TmpsRlJqazJRVEF6TlVZME9FVkZOamRFTURCRlF6VTVNamM0TVVaQ09VVXpRUSJ9.eyJpc3MiOiJodHRwczovL2JvdGZzbmQuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVlNzVlZDNiM2U5MmFmMGM2MjQwNzU1NyIsImF1ZCI6ImNhcHN0b25lIiwiaWF0IjoxNTg0ODM0OTQ4LCJleHAiOjE1ODQ5MTExNDgsImF6cCI6Inozb3lYSFBqUG1FZmJnT0R3a3l2Z3hJTzhlaHE2d1o2Iiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6Ym90cyIsImRlbGV0ZTpzdHJhdGVnaWVzIiwiZ2V0OmJvdHMiLCJnZXQ6c3RyYXRlZ2llcyIsInBhdGNoOmJvdHMiLCJwYXRjaDpzdHJhdGVnaWVzIiwicG9zdDpib3RzIiwicG9zdDpzdHJhdGVnaWVzIl19.qf8hiwiFJIGpJVhE0X7mvn1H8u9-yy1W_Wi3qnGrBtDceSKkpt_IqHYSwKJHL_HKKFU4H1KeFbET9aqe_qgJrF5YN75O0_cSKhw1HJSd8mbFYvIB-3mliJmpOdF7sycVo7vn_kia4m4JCgd9erlkpgZNRiKNX3kC9B1JbSMrXfHdek9U8CNO5uTF9harRLjqyw9YOKvcSIjz-Sn0uZd62wtYdRI81bcdQ3-DUZXPN7a0yppykKw-lreZprhBHLaLLV0wthn22CgwEbzqlf6CFc4PrMWNFWkmsWziRbz7Kdu-NJEk1oOtj3gjEFmm_svh2esPzGovmGGHgB3BaK3YWw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "71706b89-2f05-49a5-8e80-105fa77481b1",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "f2686cd9-8bac-45b7-bcca-58dc860c9a5b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "get public strategies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "rj-capstone.herokuapp.com/strategies",
+					"host": [
+						"rj-capstone",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"strategies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get public bots",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "rj-capstone.herokuapp.com/bots",
+					"host": [
+						"rj-capstone",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"bots"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get public greeting",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "rj-capstone.herokuapp.com/bots",
+					"host": [
+						"rj-capstone",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"bots"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
